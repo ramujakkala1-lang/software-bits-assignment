@@ -1,0 +1,53 @@
+================================================================================
+                    GIT COMMANDS DOCUMENTATION - ASSIGNMENT
+================================================================================
+
+1. git init -b main
+   Initializes a new local Git repository inside the current project folder and
+   sets the default branch name to 'main'.
+
+2. git status
+   Displays the state of the working directory and staging area, indicating which
+   files are tracked, untracked, modified, or staged for commit.
+
+3. git add <file>
+   Stages specified file(s) from the working tree to the Git staging area,
+   preparing them to be included in the next commit snapshot.
+
+4. git commit -m "<message>"
+   Permanently saves the staged changes into the repository history with an
+   informative descriptive commit message.
+
+5. git branch <branch-name>
+   Creates a new branch with the specified name pointing to the current commit,
+   enabling isolated feature development.
+
+6. git switch <branch-name>
+   Switches the current working directory and HEAD pointer to the specified branch
+   (alternative to 'git checkout <branch-name>').
+
+7. git merge <branch-name> --no-ff -m "<message>"
+   Merges the specified branch into the current branch, creating an explicit merge
+   commit to clearly reflect branch development in the commit history graph.
+
+8. git log --graph --oneline --decorate --all
+   Displays the complete commit history graph across all branches in a compact,
+   single-line format with branch references and visual topology.
+
+9. git reset HEAD~1
+   Undoes the most recent commit by moving the HEAD pointer back by one commit,
+   retaining the changes in the working directory as unstaged modifications.
+
+10. git remote add origin <repository-url>
+    Connects the local Git repository to a remote GitHub repository named 'origin'
+    via HTTPS.
+
+11. git push -u origin main
+    Pushes the local 'main' branch commits to the remote GitHub repository and
+    configures upstream tracking for future push/pull operations.
+
+12. git push origin feature
+    Pushes the local 'feature' branch to the remote GitHub repository so that
+    branch activity and history can be verified on GitHub.
+
+================================================================================
